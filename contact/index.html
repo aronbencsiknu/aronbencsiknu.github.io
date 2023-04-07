@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="../images/favicon.png" type="image/gif">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../show.js"></script> 
+    </head>
+    <body>
+        <div class="fixed_pattern"></div>
+        <div class="fixed_bg"></div>
+        <main>
+            <p class="command_p">aronbencsik@multivac:~$ <span class="command"></span><span class="cursor"></span></p>
+                <a href="../" class="to_hide">< Go back</a>
+                <h1 class="to_hide">Contact info</h1>
+                <address class="to_hide">
+		        <ul class="to_hide">
+                        <li><a href="mailto:aron.b.bencsik@gmail.com"><span class="inline">&gt; </span><span class="underline">aron.b.bencsik@gmail.com</span></a><br></li>
+                        <li><a href="https://www.linkedin.com/in/aronbencsik" target="_blank"><span class="inline">&gt; </span><span class="underline">https://www.linkedin.com/in/aronbencsik</span></a></li>
+                    </ul>
+                </address>
+        <script>
+            $( document ).ready(function() {
+                displayCommand("whois aron_bencsik");
+                setTimeout(function(){ displayElements(8); }, 600);
+            });
+        </script>
+    </body>
+</html> 
