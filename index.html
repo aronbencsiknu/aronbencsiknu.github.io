@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8"> 
+        <title>Home page</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="CSS TOOL provides an easy and visual way to work with CSS.">
-        <meta name="keywords" content="CSS, Web development, Code generator">
-        <meta name="author" content="Aron Bencsik">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>CSS tool</title>
-        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <meta name="description" content="Portfolio website of Aron Bencsik.">
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.png" type="image/gif">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="show.js"></script> 
     </head>
+    
     <body>
-        <header>
-            <a class="logo_link" href="index.html"><img src="images/logo.jpg" alt=""></a>
-        </header>
-        <main class="home_main">
-            <p class="intro_text__home"><i>CSS tool</i> is an online Cascading Style Sheets code generator for web developers.</p>
-            <div class="wrapper__home__tools">
-                <ul>
-                    <li><a href="border-radius/">Border radius</a></li>
-                    <li><a href="box-shadow/">Box shadow</a></li>
-                </ul>
-            </div>
+        <div class="fixed_pattern"></div>
+        <div class="fixed_bg"></div>
+        
+        <main>
+            <p class="command_p">aronbencsik@multivac:~$ <span class="command"></span><span class="cursor"></span></p>
+            <p class="ascii_art to_hide">
+                .......................................... <br>
+                .._...._......_........................... <br>
+                .|.|..|.|....|.|.......................... <br>
+                .|.|..|.|.___|.|.___.___.._.__.___...___.. <br>
+                .|.|/\|.|/._.\.|/.__/._.\|.'_.`._.\./._.\. <br>
+                .\../\../..__/.|.(_|.(_).|.|.|.|.|.|..__/. <br>
+                ..\/..\/.\___|_|\___\___/|_|.|_|.|_|\___|. <br>
+                .......................................... <br>
+
+
+            </p>
+            <p class="to_hide">My name is Aron Bencsik and this is my portfolio. <br>
+            Follow the links below to the appropriate sections:</p>
+            <ul class="to_hide">
+                <li><a href="projects_and_research/"><span class="inline">&gt; </span><span class="underline">projects and research</span></a><br></li>
+                <li><a href="about-me/"><span class="inline">&gt; </span><span class="underline">about me</span></a><br></li>
+                <li><a href="contact/"><span class="inline">&gt; </span><span class="underline">contact</span></a></li>
+            </ul>
+            
+            
         </main>
-        <footer>
-            <h2>Designed and developed by Aron Bencsik.</h2>
-        </footer>    
+        <script>
+            $( document ).ready(function() {
+                displayCommand("sudo login");
+                setTimeout(function(){ displayElements(6); }, 400);
+            });
+        </script>
+        
     </body>
-    <script>
-    </script>
-</html>
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Copy the shrug emoji with one click">
+        <meta name="theme-color" content="#f7f4e7"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/favicon.jpg">
+        <title>Copy shrug emoji</title>
+    </head>
+    <body>
+        <main>
+            <h1>Copy the shrug emoticon.</h1>
+            
+            <p class="shruggie">¯\_(ツ)_/¯<span class="wink"></span></p>
+            <button class="copy_shruggie" data-clipboard-text="¯\_(ツ)_/¯">Click to copy</button>
+            <p class="confirm">Copied.</p>
+            <p class="links"><a href="https://www.theawl.com/2014/05/the-life-and-times-of-%C2%AF_%E3%83%84_%C2%AF/" target="_blank" rel="noreferrer">More about the shruggie</a></p>
+        </main>
+        
+
+        <script>
+            $(document).ready(function(){
+                $(".confirm").hide();
+                $(".wink").hide();
+                $('.copy_shruggie').on("click", function(){
+                    value = $(this).data('clipboard-text'); //Upto this I am getting value
+            
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val(value).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                    $('.confirm').show();
+                    setTimeout(function(){
+                        $('.wink').show();
+                    }, 500);
+                    setTimeout(function(){
+                        $('.wink').hide();
+                    }, 750);
+
+                })
+            })
+        
+        </script>
+
+    </body>
+</html>
