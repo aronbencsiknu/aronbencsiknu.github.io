@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aron Bencsik - CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aron Bencsik's Curriculum Vitae">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="../images/favicon.png" type="image/gif">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../show.js"></script> 
+    </head>
+    <style>
+        ul {
+            list-style-type: none;  /* Remove the default list style */
+            padding-left: 30px;     /* Indent the list */
+        }
+
+        li {
+            position: relative;     /* Position relative to allow positioning the dash */
+            margin-bottom: 5px;     /* Optional: Add some space between list items */
+        }
+
+        li::before {
+            content: "-";           /* Add a dash before each list item */
+            position: absolute;     /* Position it absolutely */
+            left: -20px;            /* Position the dash to the left of the list item */
+        }
+    </style>
+    <body>
+        <div class="fixed_pattern"></div>
+        <div class="fixed_bg"></div>
+        <main>
+            <p class="command_p">aronbencsik@multivac:~$ <span class="command"></span><span class="cursor"></span></p>
+            <a href="../" class="to_hide">< Go back</a>
+            <h1 class="to_hide">Aron Bencsik — CV</h1>
+            
+            <section class="to_hide">
+                <p><a href="https://drive.google.com/file/d/1GKbQmAZf1ghtnQGRJvY972t65kF5GSGY/view?usp=drive_link" target="_blank">> PDF version</a></p>
+                <p>--------</p>
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Email: <a href="mailto:aron.b.bencsik@gmail.com">aron.b.bencsik@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+447718939550">+44 77 1893 9550</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/aronbencsik/" target="_blank">linkedin.com/in/aronbencsik/</a></li>
+                </ul>
+            </section>
+
+            
+            
+            <section class="to_hide">
+                <p>--------</p>
+                <h2>Experience</h2>
+                
+                <h3>AI Research Intern | Northumbria University</h3>
+                <p>May 2023 - Aug 2023</p>
+                <ul>
+                    <li>Developed a Gym API environment to model organizational cooperation.</li>
+                    <li>Experimented with RL architectures using OpenAI Baselines and investigated the feasibility of large-scale multi-agent reinforcement learning.</li>
+                    <li>Technologies: TensorFlow, PyTorch, GymAPI, OpenAI Baselines.</li>
+                </ul>
+                <h3>AI Engineer | Glia Research, Budapest (Remote)</h3>
+                <p>Jan 2023 - May 2023</p>
+                <ul>
+                    <li>Managed a team of 4 developers in building a Reinforcement Learning-based energy management system for industrial greenhouses, achieving a reduction of 10% compared to conventional thermostats.</li>
+                    <li>Using the interface developed in Node.js, Glia demonstrated the product to representatives from the Government of Hungary.</li>
+                    <li>Technologies: Node.js, PyTorch, MySQL, Docker.</li>
+                </ul>
+                <h3>Machine Learning Intern | Institute for Computer Science and Control, Budapest</h3>
+                <p>Jun 2022 - Oct 2022</p>
+                <ul>
+                    <li>Applied Deep Learning for microbe monitoring in water reservoirs for the Budapest Waterworks.</li>
+                    <li>Technologies: PyTorch, TensorFlow, OpenCV.</li>
+                </ul>
+                <h3>Full-stack Developer | Glia Research, Budapest</h3>
+                <p>May 2019 - Sept 2020</p>
+                <ul>
+                    <li>Developed and revamped several websites using ReactJS, including the corporate website of Glia.</li>
+                    <li>Developed an Android application to collect weather information from a LoraWAN network.</li>
+                    <li>Technologies: ReactJS, React Native, PHP, HTML, CSS, WordPress, JavaScript, Java, C#.</li>
+                </ul>
+            </section>
+            
+            <section class="to_hide">
+                <p>--------</p>
+                <h2>Education</h2>
+                <h3>MSc Advanced Computer Science: Artificial Intelligence</h3>
+                <p>Distinction, Sept 2023 - Sept 2024<br>The University of Manchester, Manchester, UK</p>
+                <ul>
+                    <li>Modules: Foundations of ML, Representation Learning, Robotics & Computer Vision, Text Mining</li>
+                    <li>Thesis title: A Benchmarking Framework for Neuromorphic Network-on-Chip Architectures.</li>
+                </ul>
+                
+                <h3>BSc Computer Science with Artificial Intelligence with Honours</h3>
+                <p>First Class, Sept 2020 - May 2023<br>Northumbria University, Newcastle upon Tyne, UK</p>
+                <ul>
+                    <li>Modules: Intelligent Systems, AI & Robotics, ML & Computer Vision, Computational Neuroscience</li>
+                    <li>Thesis title: Detecting Stock Market Manipulation Using Spiking Neural Networks.</li>
+                </ul>
+            </section>
+            
+            <section class="to_hide">
+                <p>--------</p>
+                <h2>Seminars</h2>
+                <h3>ML4Good AI Alignment Bootcamp</h3>
+                <p>Apr 2024 - May 2024<br>EffiSciences, Paris</p>
+            </section>
+            
+            <section class="to_hide">
+                <p>--------</p>
+                <h2>Volunteering</h2>
+                <h3>Student Representative | University of Manchester Students’ Union</h3>
+                <p>Sept 2023 - Present</p>
+                <ul>
+                    <li>Representing Advanced Computer Science students in Staff Student Liaison Committee meetings.</li>
+                </ul>
+            </section>
+        </main>
+        <script>
+            $( document ).ready(function() {
+                displayCommand("cat resume.txt");
+                setTimeout(function(){ displayElements(9); }, 500);
+            });
+        </script>
+    </body>
+</html>
